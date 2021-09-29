@@ -4,6 +4,32 @@
     <meta charset="UTF-8">
     <title>Заказ оформлен</title>
     <link href="style.css" rel="stylesheet">
+    <script>
+(dataLayer = window.dataLayer || []).push({
+  'ecommerce': {
+    'purchase': {
+      'actionField': {
+       'id': '5', // номер заказа
+	'revenue': '19320', // сумма заказа
+	'shipping': '0' // стоимость доставки
+	},
+      'products': [{
+          'id': '123',  // ID товара или артикул (string).
+          'name': 'Carpinus BETULUS (Граб)',  // Название товара (string).
+          'price': '19320',  // Цена (currency: '9.99').
+          'category': 'trees',  // Категория товара (string).
+          'category_id': '1', // id категории
+         }]
+     }
+   },
+  'eCategory': 'eEC',
+  'eAction': 'purchase',
+  'eLabel': '',
+  'eNI': true,
+  'eCD' : [['1', 'Доставка курьером'], ['2','Картой при получении']]
+  'event': 'GAEventEC'
+});
+</script>
     <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
