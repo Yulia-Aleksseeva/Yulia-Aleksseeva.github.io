@@ -3,6 +3,15 @@
 <head>
 <meta charset="utf-8">
 <title>Код страницы 404</title>
+    <script>
+(dataLayer = window.dataLayer || []).push({
+	'eCategory': '404Error', 
+	'eAction': location.href,
+	'eLabel': document.referrer||'no-referrer',
+	'eNI': true,
+	'event': 'GAEvent'
+});
+</script>
 <style>
     html { height: 100%; }
     body {
