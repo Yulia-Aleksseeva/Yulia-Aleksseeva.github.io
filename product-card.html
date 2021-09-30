@@ -74,7 +74,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </section>
   <div class="button">
     <form action="card.html">
-      <button type="submit" class="button-send-card">Добавить в корзину</button>
+      <button type="submit" onclick=(dataLayer = window.dataLayer || []).push({
+  'ecommerce': {
+    'add': {
+      'products': [{
+          'id': '123',  // ID товара или артикул (string).
+          'name': 'Carpinus BETULUS (Граб)',  // Название товара (string).
+          'price': '19320',  // Цена (currency: '9.99').
+          'category': 'trees',  // Категория товара (string).
+          'category_id': '1', // id категории
+         }]
+     }
+   },
+  'eCategory': 'eEC',
+  'eAction': 'cardAdd',
+  'eLabel': '',
+  'eNI': true,
+  'event': 'GAEventEC'
+}); class="button-send-card">Добавить в корзину</button>
     </form>
   </div>
 <section class="description">
